@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="20dp"
+    android:background="@color/lightgrey">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Centrum powiadomień"
+        android:textSize="30sp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="357dp"
+        android:src="@drawable/placeholder2" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sendNotif"
+        android:text="Wyslij powiadomienie"
+        app:cornerRadius = "0px"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/redirectToSiteBrowser"
+        android:text="Otworz strone"
+        app:cornerRadius = "0px"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/selectContact"
+        android:text="Wybierz kontakt"
+        app:cornerRadius = "0px"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/showDialog"
+        android:text="Pokaz dialog"
+        app:cornerRadius = "0px"
+        />
+
+
+</LinearLayout>
