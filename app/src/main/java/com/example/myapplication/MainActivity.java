@@ -1,14 +1,19 @@
 package com.example.myapplication;
 
+import android.Manifest;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.widget.Button;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 import androidx.core.app.NotificationCompat;
+import androidx.core.content.ContextCompat;
 
 public class MainActivity extends AppCompatActivity
 {
@@ -69,7 +74,8 @@ public class MainActivity extends AppCompatActivity
         try
         {
             startActivity(intent);
-        } catch(Exception e)
+        }
+        catch(Exception e)
         {
 
         }
@@ -82,14 +88,16 @@ public class MainActivity extends AppCompatActivity
                 .setPositiveButton("TAK", new DialogInterface.OnClickListener() {
 
                     @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-
+                    public void onClick(DialogInterface dialogInterface, int i)
+                    {
+                        MainActivity.this.finish();
                     }
                 })
                 .setNegativeButton("NIE", new DialogInterface.OnClickListener() {
 
                     @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
+                    public void onClick(DialogInterface dialogInterface, int i)
+                    {
 
                     }
                 });
